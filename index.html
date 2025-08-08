@@ -114,35 +114,38 @@
     </div>
   </div>
 </div>
+<!------ -->
 <div class="section" id="google">
   <div class="container">
     <div class="card" data-aos="fade-up" data-aos-offset="10">
       <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <div class="card-body">
-            <div class="h4 mt-0 title">Google Calendar</div>
-            <p>Забронируйте время для встречи</p>
-            <div class="h4 mt-0 title">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <!-- Google Calendar Appointment Scheduling button -->
-                    <script>
-                        (function () {
-                          var target = document.currentScript;
-                          window.addEventListener('load', function () {
-                            calendar.schedulingButton.load({
-                              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3cOrRvdE18U1eccsvJiJ-WS5Dcr4YDsBjS76xgfSrbHJ_TbE8KvC98wvdyV5KGn-2AKIqCpafl?gv=true',
-                              color: '#008000',
-                              label: 'Забукать время',
-                              target: target,
-                            });
-                          });
-                        })();
-                    </script>
-                  </div>
-                </div>
-              </div>
+        <div class="col-lg-8 mx-auto text-center">
+          <div class="card-body py-5">
+            <div class="h4 mt-0 title mb-3">Google Calendar</div>
+            <p class="lead mb-4">Забронируйте время для встречи</p>
+            
+            <!-- Google Calendar Appointment Scheduling button -->
+            <div class="calendar-booking-section">
+              <script>
+                (function () {
+                  var target = document.currentScript;
+                  window.addEventListener('load', function () {
+                    calendar.schedulingButton.load({
+                      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3cOrRvdE18U1eccsvJiJ-WS5Dcr4YDsBjS76xgfSrbHJ_TbE8KvC98wvdyV5KGn-2AKIqCpafl?gv=true',
+                      color: '#28a745',
+                      label: 'Забукать время',
+                      target: target,
+                    });
+                  });
+                })();
+              </script>
+            </div>
+            
+            <div class="mt-4">
+              <small class="text-muted">
+                <i class="fa fa-calendar mr-2"></i>
+                Выберите удобное время для консультации
+              </small>
             </div>
           </div>
         </div>
@@ -150,6 +153,7 @@
     </div>
   </div>
 </div>
+<!------ -->
 </div>
     </div>
     <footer class="footer">
